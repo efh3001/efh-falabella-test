@@ -1,16 +1,17 @@
 # ** Desafío Falabella**
 
-### Requisitos para correr el desafio
+### Requisitos para correr el desafío
 
 - Docker
+- Puerto 80 disponible para poder acceder a la raíz del servidor web
 
-### Instalacion de Docker
+### Instalación de Docker
 - Para Mac : [Docker Mac](https://docs.docker.com/desktop/install/mac-install/ "Docker Mac")
 - Para Linux: [Docker Linux](https://docs.docker.com/desktop/install/linux-install/ "Docker Linux")
 
-### Contruccion Local 
-
+### Contrucción Local 
 Para poder construir localmente la imagen docker basta con colocarse en la raiz del proyecto y ejecutar :
+
 `docker build -t <image_name>:<tag> .`
 
 ### Ejecutar imagen creada localmente
@@ -27,8 +28,8 @@ La imagen de este proyecto se encuentra en su ultima versión estable en docker 
 Con esto se traerá la imagen desde Docker Hub
 
 ### Pruebas
-
 El correcto funcionamiente se puede probar utilizando : 
+
 `$ curl -sL http://localhost | base64 -d`
 
 Corriendo ese comando uno debería obtener como respuesta:
