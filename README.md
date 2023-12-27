@@ -14,8 +14,8 @@ Para poder construir localmente la imagen docker basta con colocarse en la raíz
 
 `docker build -t <image_name>:<tag> .`
 
-*Recuerde reemplazar <image_name> por el nombre que desee
-Recuerde reemplazar <tag> por el tag que desee*
+*Recuerde reemplazar <image_name> por el nombre que desee*
+*Recuerde reemplazar <tag> por el tag que desee*
 
 ### Ejecutar imagen creada localmente
 
@@ -23,8 +23,8 @@ Para ejecutar localmente debemos abrir el puerto 80 para poder comunicarnos con 
 
 `docker run -p 80:80 <image_name>:<tag> `
 
-*Recuerde reemplazar <image_name> por el nombre que desee
-Recuerde reemplazar <tag> por el tag que desee*
+*Recuerde reemplazar <image_name> por el nombre que desee*
+*Recuerde reemplazar <tag> por el tag que desee*
 
 ### Ejecutar Imagen desde DockerHUB
 La imagen de este proyecto se encuentra en su última versión estable en DockerHUB, para utilizarla basta con ejecutar el siguiente comando:
