@@ -1,4 +1,8 @@
-# ** Desafío Falabella**
+# Desafío Falabella
+
+### Descripción
+
+Este proyecto se compone de un servidor web NGINX dockerizado que expone un puerto 80. Se puede realizar una llamada http a localhost de tal manera de obtener como respuesta un 
 
 ### Requisitos para correr el desafío
 
@@ -14,9 +18,11 @@ Para poder construir localmente la imagen docker basta con colocarse en la raíz
 
 `docker build -t <image_name>:<tag> .`
 
-*Recuerde reemplazar <image_name> por el nombre que desee*
+*Recuerde reemplazar `<image_name>` por el nombre que desee.*
 
-*Recuerde reemplazar <tag> por el tag que desee*
+*Recuerde reemplazar `<tag>`por el tag que desee.*
+
+*ejemplo: `docker build -t test:latest .`*
 
 ### Ejecutar imagen creada localmente
 
@@ -24,9 +30,15 @@ Para ejecutar localmente debemos abrir el puerto 80 para poder comunicarnos con 
 
 `docker run -p 80:80 <image_name>:<tag> `
 
-*Recuerde reemplazar <image_name> por el nombre que desee*
+Alternativamente se puede usar el modo independiente (detached) para ejecutar la imagen
 
-*Recuerde reemplazar <tag> por el tag que desee*
+`docker run -d -p 80:80 <image_name>:<tag> `
+
+*Recuerde reemplazar` <image_name> `por el nombre que desee.*
+
+*Recuerde reemplazar `<tag>` por el tag que desee.*
+
+*ejemplo: `docker run -p 80:80 test:latest `*
 
 ### Ejecutar Imagen desde DockerHUB
 La imagen de este proyecto se encuentra en su última versión estable en DockerHUB, para utilizarla basta con ejecutar el siguiente comando:
