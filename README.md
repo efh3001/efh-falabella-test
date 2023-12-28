@@ -2,7 +2,8 @@
 
 ### Descripción
 
-Este proyecto se compone de un servidor web NGINX dockerizado que expone un puerto 80. Se puede realizar una llamada http a localhost de tal manera de obtener como respuesta un 
+Este proyecto se compone de un servidor web NGINX dockerizado que expone un puerto 80 y una página con mi nombre encryptado en base64.
+El repositorio contiene dos carpetas, una con las configuraciones basicas de NGINX y otro con un archivo estatico que es desplegado el momento de ejecutar el contenedor. En la raiz del proyecto se encuentra el Dockerfile y el Readme.
 
 ### Requisitos para correr el desafío
 
@@ -41,18 +42,18 @@ Alternativamente se puede usar el modo independiente (detached) para ejecutar la
 *ejemplo: `docker run -p 80:80 test:latest `*
 
 ### Ejecutar Imagen desde DockerHUB
-La imagen de este proyecto se encuentra en su última versión estable en DockerHUB, para utilizarla basta con ejecutar el siguiente comando:
+La imagen de este proyecto se encuentra en su última versión estable en DockerHUB. Para utilizarla basta con ejecutar el siguiente comando:
 
 `docker run -p 80:80 efh3001/falabella-desafio:latest `
 
-Con esto se traerá la imagen desde Docker Hub
+Con esto se bajará la imagen desde DockerHub y el contenedor se iniciará con esta.
 
 ### Pruebas
-El correcto funcionamiento se puede corroborar utilizando : 
+El correcto funcionamiento se puede corroborar utilizando el siguiente comando : 
 
 `$ curl -sL http://localhost | base64 -d`
 
-Corriendo ese comando uno debería obtener como respuesta:
+Corriendo ese comando se debería obtener como respuesta:
 
 `Enrique Fernandez Hernandez`
 
