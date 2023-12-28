@@ -1,4 +1,4 @@
-FROM nginx:latest
+FROM nginx:1.25.3
 LABEL maintainer="Enrique Fernandez Hernandez <efernandezh1985@gmail.com>"
 LABEL version="1.0"
 

@@ -2,7 +2,7 @@
 
 ### Descripción
 
-Este proyecto se compone de un servidor web NGINX dockerizado que expone un puerto 80 y una página con mi nombre encryptado en base64.
+Este proyecto se compone de un servidor web NGINX ( se utiliza la última versión disponible 1.25.3 )dockerizado que expone un puerto 80 y una página con mi nombre encryptado en base64.
 El repositorio contiene dos carpetas, una con las configuraciones basicas de NGINX y otro con un archivo estatico que es desplegado el momento de ejecutar el contenedor. En la raiz del proyecto se encuentra el Dockerfile y el Readme.
 
 ### Requisitos para correr el desafío
